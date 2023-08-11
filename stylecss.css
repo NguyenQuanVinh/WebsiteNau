@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box{
+    position: relative;
+    width: 420px;
+    
+}
+
+.inputbox{
+    position: relative;
+    border-bottom: 2px solid #333;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top:-5px;
+}
+
+.inputbox input{
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #333;
+}
